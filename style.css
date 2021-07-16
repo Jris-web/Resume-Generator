@@ -1,0 +1,28 @@
+/* #cv-form{
+    display: none;   
+} */
+
+#cv-template{
+    display: none; 
+}
+.myimg{
+    /* border: 1px solid black; */
+    width: 200px;
+}
+.background{
+    background-color:#438797;
+}
+
+.background1{
+    background-color: #59A9B5;
+}
+.backgroundpara{
+    background-color: #E2F3F9;
+}
+.backWhole{
+    background-image: url("https://res.cloudinary.com/dbraeu015/image/upload/v1626408048/17_drqaye.jpg");
+    height: 100vh;
+}
+.colortxt{
+    color: white;
+}
