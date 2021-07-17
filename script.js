@@ -40,15 +40,15 @@ function generateCV(){
     // console.log("generating cv");
     
      let nameField = document.getElementById("nameField").value;
-     
-     let nameT1 = document.getElementById("nameT1");
 
+     let nameT1 = document.getElementById("nameT1");
+    // nameT1.classList.add("colortxt");
      nameT1.innerHTML = nameField;
 
 //direct (short-cut)
 
 document.getElementById("nameT2").innerHTML = nameField;
-
+nameT2.classList.add("colortxt");
 //contact
 document.getElementById("contactT").innerHTML = document.getElementById("contactField").value;
 // address
@@ -87,9 +87,23 @@ for(let e of aqs){
 
 document.getElementById("aqT").innerHTML = str1;
 
+// For Uploading Image
+
+let file = document.getElementById('imgField').files[0]
+
+let reader = new FileReader()
+
+reader.readAsDataURL(file);
+
+// Set the image to template
+reader.onloadend=function() {
+    document.getElementById("imgTemplate").src = reader.result;
+};
+
+
+
 document.getElementById("cv-form").style.display="none";
 document.getElementById("cv-template").style.display="block";
-
 }
 
 // For printing CV
